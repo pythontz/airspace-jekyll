@@ -30,8 +30,8 @@ markdown: kramdown
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+  - cat: python
+    desc: "Posts describing python techniques."
 
-  - cat: dummy
+  - cat: Applied
     desc: "Just some placeholder posts, lorem ipsum and the rest."
