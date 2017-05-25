@@ -1,0 +1,27 @@
+---
+layout: page
+title: Events
+permalink: /events/
+---
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Get the latest Events</h1>
+          <p>Catch up with Python Events</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% for event in site.events %}
+<div class="event-area">
+  <a href="{{ event.url | prepend: site.baseurl }}" class="bold">{{ event.title }}</a>
+  <p class="event-date">{{ event.date | date_to_long_string }}</p>
+  <p>
+    {{ event.content | strip_html | truncatewords: 50 }}
+  </p>
+</div>
+{% endfor %}
