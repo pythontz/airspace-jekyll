@@ -1,27 +1,69 @@
 ---
-layout: page
-title: Events
+layout: event_default
+cover: 'http://www.abisolutions.org.uk/website/images/ConferencesHR.jpg'
 permalink: /events/
 ---
-<section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>Get the latest Events</h1>
-          <p>Catch up with Python Events</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-{% for event in site.events %}
-<div class="event-area">
-  <a href="{{ event.url | prepend: site.baseurl }}" class="bold">{{ event.title }}</a>
-  <p class="event-date">{{ event.date | date_to_long_string }}</p>
-  <p>
-    {{ event.content | strip_html | truncatewords: 50 }}
-  </p>
+<div class="home">
+  
+    {% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
+
+    <div class="clearfix">
+
+      <h1 class="event-time-heading fix-top">Future {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
+
+      {% for post in site.posts reversed %}
+      
+      {% if post.categories contains 'event' %}
+
+        {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
+
+        {% if blogDate >= currentDate %}
+      
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            {% if post.cover %}
+            <div class="event-sqaure" style="background-image:url({{post.cover}});">
+            {% else %}
+            <div class="event-sqaure" style="background-image:url(http://evento.io/img/cover.jpg);">
+            {% endif %}
+              <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
+               <div class='event-square-overlay'></div>
+            </div>
+           
+          </a>
+
+        {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="clearfix">
+
+      <h1 class="event-time-heading">Past {% if site.event_label %} {{site.event_label}} {% else %} Events {% endif %} </h1>
+      {% for post in site.posts %}
+       {% if post.categories contains 'event' %}
+
+        {% capture blogDate %}{{post.date | date: '%s' }}{% endcapture %}
+
+        {% if blogDate < currentDate %}
+
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            {% if post.cover %}
+            <div class="event-sqaure" style="background-image:url({{post.cover}});">
+            {% else %}
+            <div class="event-sqaure" style="background-image:url(http://app-beacon.com/wp-content/uploads/2015/05/events.jpg);">
+            {% endif %}
+              <h2>{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></h2>
+              <div class='event-square-overlay'></div>
+            </div>
+            
+          </a>
+
+        {% endif %}
+     
+        {% endif %}
+      {% endfor %}
+    </div>
+
 </div>
-{% endfor %}
+</div>
+      

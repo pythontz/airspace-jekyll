@@ -1,3 +1,4 @@
+
 /*
  * This is the main css file that ships with the airspace theme.
  * In airspace, it is called style.css
@@ -37,20 +38,13 @@ p {
   font-size: 20px;
   line-height: 28px;
 }
-ul {
-  font-family: 'Lato', sans-serif;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-size: 18px;
-}
 
 ol {
-  
+  font-family: 'Lato', sans-serif;
   text-align:left; 
-  padding:10px, 2px;
   font-size: 18px;
-  display:block; 
+  -webkit-font-smoothing: antialiased;
+  
 }
 
 
@@ -790,8 +784,8 @@ font header .navbar-default .navbar-nav li a:hover {
 footer {
   background: #F5F5F5;
   text-align: center;
-  padding-top: 48px;
-  padding-bottom: 55px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 footer p {
   font-size: 13px;

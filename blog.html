@@ -17,6 +17,7 @@ permalink: /blog/
   </div>
 </section>
 {% for post in site.posts %}
+{% if post.categories contains 'blog' %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
   <p class="post-date">{{ post.date | date_to_long_string }}</p>
@@ -24,4 +25,5 @@ permalink: /blog/
     {{ post.content | strip_html | truncatewords: 50 }}
   </p>
 </div>
+{% endif %}
 {% endfor %}
