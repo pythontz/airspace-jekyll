@@ -10,12 +10,18 @@ permalink: /blog/
       <div class="col-md-12">
         <div class="block">
           <h1>Get the latest info about python</h1>
-          <p>Catch up with Python, anytime and anywhere</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<div class="home">
+<section id="portfolio-work">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
 {% for post in site.posts %}
 {% if post.categories contains 'blog' %}
 <div class="post-area">
@@ -27,3 +33,10 @@ permalink: /blog/
 </div>
 {% endif %}
 {% endfor %}
+        </div>
+          </div>
+        </div>
+    </div>
+</section>
+</div>
+

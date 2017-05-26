@@ -14,9 +14,18 @@
 /*--
 	Common Css
 --*/
+
+
 body {
-  font-family: 'Lato', sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; 
 }
 h1,
 h2,
@@ -40,10 +49,9 @@ p {
 }
 
 ol {
-  font-family: 'Lato', sans-serif;
+  
   text-align:left; 
   font-size: 18px;
-  -webkit-font-smoothing: antialiased;
   
 }
 
@@ -71,7 +79,7 @@ a:active {
 	Header Start
 --*/
 header {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px 0;
 }
 header .navbar {
