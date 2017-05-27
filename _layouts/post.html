@@ -1,7 +1,9 @@
 ---
 layout: page
 ---
-{{ content }}
+
+
+<article class="event" itemscope itemtype="http://schema.org/Blogeventing">
 
 <div class="post">
   <!-- Wrapper Start -->
@@ -10,7 +12,7 @@ layout: page
       <div class="row">
         <div>
           <div class="block">
-            <h1>{{ page.title }}</h1>
+            <h1 >{{ page.title }}</h1>
             <div class="post-info-wrapper">
               <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
             </div>
@@ -25,3 +27,4 @@ layout: page
 <p class="center-text" style="padding: 30px;">
   <a href="{{ site.baseurl }}/blog">Back to blog</a>
 </p>
+</article>
