@@ -32,6 +32,12 @@ cover: 'http://www.abisolutions.org.uk/website/images/ConferencesHR.jpg'
         </div>
     {% endif %}
 
+    {% if organiser.link %}
+        <div>
+            <a href='{{organiser.link}}' class="button button-primary">Register</a>
+        </div>
+    {% endif %}
+
 </article>
 
 

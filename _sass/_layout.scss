@@ -222,27 +222,29 @@
 }
 
 .event-date{
-  margin:10px 0 0 0;
+  margin:20px 0 0 0;
   padding: 0;
+  color: #3407af;
 }
 
 .event-time{
-  line-height: 18px;
+  line-height: 8px;
 }
 
 .event-time, .event-organisers-name{
-  margin: 0;
-  color:#A6A6A6;
+  margin: 8px 0 0 0;
+  color: #2e234c;
 }
 
 .event-title {
-    font-size: 28px;
+    font-size: 30px;
     letter-spacing: -1px;
     line-height: 1;
     word-wrap: break-word;
     padding:0;
     margin:0;
     width: 75%;
+    color:#3407af;
 
     @include media-query($on-laptop) {
       font-size: 25px;
@@ -403,7 +405,7 @@
 }
 
 .event-time-heading.fix-top{
-  margin-top:-10px;
+  margin-top:-px;
 }
 
 .event-time-heading{
