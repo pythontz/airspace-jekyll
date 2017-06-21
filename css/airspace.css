@@ -117,7 +117,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 150px 0 200px 0;
+  padding: 200px 0 200px 0;
   position: relative;
 }
 #slider:before {
@@ -145,7 +145,8 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 45px;
 }
 #slider .block p {
-  font-size: 20px;
+  font-size: 15px;
+  color:#48E5C2;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -155,7 +156,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	wrapper Start
 --*/
 #intro {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 #intro .block h2 {
   padding-top: 35px;
@@ -164,7 +165,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #intro .block p {
   color: #7B7B7B;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 #intro .block img {
   padding-left: 40px;
@@ -181,7 +182,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #service {
   text-align: center;
-  padding: 90px 0;
+  padding: 80px 0;
 }
 #service .service-item {
   padding-bottom: 30px;
@@ -210,7 +211,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 70px 0px;
+  padding: 60px 0px;
   position: relative;
   text-align: center;
   color: #fff;
