@@ -28,5 +28,3 @@ Before coming to an event, it is essential you install the prerequiste software 
 
 Luckily all the software required has already been prepackaged in a bundle called [Anaconda](https://www.continuum.io/). You can download the various versions of the software for your laptop OS and architecture from the [Anaconda website](https://www.continuum.io/downloads). For installation instruction follow this [link](https://pythontz.github.io/blog/2016/05/20/python.html)
 
-### Event Schedule
-<script type="text/javascript" src="https://shdlr.com/embed/lib.js"></script><div id="shdlr-integrate" data-conftype="grid_inline" data-confid="2054"  data-halls="" ></div>
