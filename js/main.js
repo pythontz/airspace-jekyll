@@ -27,7 +27,12 @@ $(document).ready(function(){
 		itemsDesktopSmall : [979,5],
 	});
 
-
+    //Mail
+    function sendMail() {
+    var link = "mailto:info@python.or.tz"
+             + "?cc=deusjeraldy@gmail.com";
+             window.location.href = link;
+     }
 	// google map
 		var map;
 		function initMap() {
